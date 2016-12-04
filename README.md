@@ -91,6 +91,20 @@ Using the same examples as above, `getString()` returns the following:
 2.  Lorem.ipsum
 3.  (eval)evil
 
+### `getCaller`
+
+`getCaller(func)` returns the function's caller
+
+    var callerId = require('caller-id');
+
+    function myCaller() {
+        var caller = callerId.getCaller();
+    }
+
+Using the same examples as above, `getCaller()` returns the following:
+
+caller one level up in stack
+
 ### `getDetailedString`
 
 `getDetailedString()` returns a more detailed string representing a function's caller
